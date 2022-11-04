@@ -10,3 +10,13 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("test set_zero function")
+{
+    int num = 100;
+    int num1 = 100;
+    set_zero(num, num1);
+
+    REQUIRE(num == 100);
+    REQUIRE(num1 == 0);
+}
